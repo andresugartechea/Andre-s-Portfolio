@@ -31,29 +31,31 @@ body {
     padding: 20px;
 }
 
+
+/*  GALLERY SECTION*/
+
 .hero-section{
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 25%;
+    height: 100px;
     /* height of the nav bar */
 }
 
-.row{
-    display: flex;
-}
-
 .container {
-    /* 100% / number of images in a row */
-    width: 33%;
     position: relative;
-    left: 25%;
     transition: transform 1000ms;
-    display: block;
+    /* display: block; */
 }
 
 .container img{
-    width: 100%;
     opacity: 1;
-    height: auto;
-    display: block;
+    max-height: 100px ;
+    /* display: block; */
 }
 
 .row .container:focus,
@@ -71,13 +73,13 @@ body {
     left: 2%;
     width: 96%;
     height: 96%;
-    transform: translate(0%,0%) rotate(-90deg);
+    transform: translate(0%,0%) rotateY(-90deg);
     text-align: center;
 }
 
 .container:hover .info{
     opacity: .5;
-    transform: rotate(0deg);
+    transform: rotateY(0deg);
 }
 
 .text{
@@ -86,9 +88,11 @@ body {
     padding: 16px 32px;
 }
 
+/*  */
+
 .footer {
     background-color: white;
-    display:flex;
+    display:none;
     justify-content: center;
     position:relative;
     bottom: 0;
