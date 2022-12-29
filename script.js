@@ -14,14 +14,18 @@ let photo = document.getElementsByClassName("photography");
 let video = document.getElementsByClassName("video");
 let animation = document.getElementsByClassName("animation");
 
+let a;
 document.querySelectorAll(".gallery .container").forEach(container =>{
     container.onclick = () => {
         document.querySelector(".popup-img").style.display = "block";
         document.querySelector(".gallery").style.display = "none";
         document.querySelector(".nav").style.display = "none";
-        // a = container.querySelector("img");
+        // document.querySelector(".footer").style.display = "none";
+        // a = container.querySelector(".details p").innerHTML;
         // console.log(a);
         document.querySelector(".popup-img img").src = container.querySelector("img").getAttribute("src");
+        document.querySelector(".popup-img .title").innerHTML = container.querySelector("img").getAttribute("alt");
+        document.querySelector(".popup-img .label-details").innerHTML = container.querySelector(".details p").innerHTML;
     }
 })
 
