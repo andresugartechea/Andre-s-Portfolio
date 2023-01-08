@@ -165,7 +165,7 @@ body {
     top:50%;
     left:35%;
     transform: translate(-50%, -50%);
-    width: 39vw;
+    width: 36vw;
     object-fit: cover;
 }
 
@@ -227,7 +227,7 @@ body {
     } 
 
     .nav img{
-        width: 20vw;
+        width: 16vw;
         align-self: center;
     }
     

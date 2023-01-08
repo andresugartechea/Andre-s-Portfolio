@@ -1,18 +1,15 @@
-//IMAGES
-let drawing01 = document.getElementById("drawing01");
-
 // BUTTONS
 let btn_drawing = document.getElementById("btn_drawing");
-let btn_photo = document.getElementById("btn_photo");
+let btn_digital = document.getElementById("btn_digital");
 let btn_video = document.getElementById("btn_video");
-let btn_animation = document.getElementById("btn_animation");
+let btn_IM = document.getElementById("btn_IM");
 let btn_all = document.getElementById("btn_all");
 
 // CLASSES
 let drawing = document.getElementsByClassName("drawing");
-let photo = document.getElementsByClassName("photography");
+let digital = document.getElementsByClassName("digital");
 let video = document.getElementsByClassName("video");
-let animation = document.getElementsByClassName("animation");
+let IM = document.getElementsByClassName("IM");
 
 let a;
 document.querySelectorAll(".gallery .container").forEach(container =>{
@@ -42,31 +39,31 @@ if (btn_drawing) {
         for (let i = 0; i < drawing.length; i++) {
             drawing[i].style.display = 'block';
         }
-        for (let i = 0; i < photo.length; i++) {
-            photo[i].style.display = 'none';
+        for (let i = 0; i < digital.length; i++) {
+            digital[i].style.display = 'none';
         }
         for (let i = 0; i < video.length; i++) {
             video[i].style.display = 'none';
         }
-        for (let i = 0; i < animation.length; i++) {
-            animation[i].style.display = 'none';
+        for (let i = 0; i < IM.length; i++) {
+            IM[i].style.display = 'none';
         }
     });
 }
 
-if (btn_photo) {
-    btn_photo.addEventListener('click', () => {
+if (btn_digital) {
+    btn_digital.addEventListener('click', () => {
         for (let i = 0; i < drawing.length; i++) {
             drawing[i].style.display = 'none';
         }
-        for (let i = 0; i < photo.length; i++) {
-            photo[i].style.display = 'block';
+        for (let i = 0; i < digital.length; i++) {
+            digital[i].style.display = 'block';
         }
         for (let i = 0; i < video.length; i++) {
             video[i].style.display = 'none';
         }
-        for (let i = 0; i < animation.length; i++) {
-            animation[i].style.display = 'none';
+        for (let i = 0; i < IM.length; i++) {
+            IM[i].style.display = 'none';
         }
     });
 }
@@ -76,31 +73,31 @@ if (btn_video) {
         for (let i = 0; i < drawing.length; i++) {
             drawing[i].style.display = 'none';
         }
-        for (let i = 0; i < photo.length; i++) {
-            photo[i].style.display = 'none';
+        for (let i = 0; i < digital.length; i++) {
+            digital[i].style.display = 'none';
         }
         for (let i = 0; i < video.length; i++) {
             video[i].style.display = 'block';
         }
-        for (let i = 0; i < animation.length; i++) {
-            animation[i].style.display = 'none';
+        for (let i = 0; i < IM.length; i++) {
+            IM[i].style.display = 'none';
         }
     });
 }
 
-if (btn_animation) {
-    btn_animation.addEventListener('click', () => {
+if (btn_IM) {
+    btn_IM.addEventListener('click', () => {
         for (let i = 0; i < drawing.length; i++) {
             drawing[i].style.display = 'none';
         }
-        for (let i = 0; i < photo.length; i++) {
-            photo[i].style.display = 'none';
+        for (let i = 0; i < digital.length; i++) {
+            digital[i].style.display = 'none';
         }
         for (let i = 0; i < video.length; i++) {
             video[i].style.display = 'none';
         }
-        for (let i = 0; i < animation.length; i++) {
-            animation[i].style.display = 'block';
+        for (let i = 0; i < IM.length; i++) {
+            IM[i].style.display = 'block';
         }
     });
 }
@@ -110,14 +107,14 @@ if (btn_all) {
         for (let i = 0; i < drawing.length; i++) {
             drawing[i].style.display = 'block';
         }
-        for (let i = 0; i < photo.length; i++) {
-            photo[i].style.display = 'block';
+        for (let i = 0; i < digital.length; i++) {
+            digital[i].style.display = 'block';
         }
         for (let i = 0; i < video.length; i++) {
             video[i].style.display = 'block';
         }
-        for (let i = 0; i < animation.length; i++) {
-            animation[i].style.display = 'block';
+        for (let i = 0; i < IM.length; i++) {
+            IM[i].style.display = 'block';
         }
     });
 }
