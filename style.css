@@ -170,6 +170,7 @@ body {
     object-fit: cover;
 }
 
+
 .popup-img .label{
     position: absolute;  
     top:50%;
@@ -189,13 +190,37 @@ body {
     margin-bottom: 30px;
 }
 
-.popup-img .label-details{
+.popup-img .label-details, .label-description{
     color:rgba(255, 255, 255, 0.7);
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2vw;
+    text-align: justify;
 
     margin: 0;
+}
+
+.popup-img .label-details{
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+}
+
+.popup-img .label-description{
+    font-size: 1.2vw;
     margin-bottom: 30px;
+}
+
+.popup-img a{
+    text-decoration: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+
+    opacity: .5;
+    transition-duration: 0.4s;
+}
+
+.popup-img a:hover{
+    color: white;
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* IV | FOOTER */
@@ -280,11 +305,20 @@ body {
 
     .popup-img .label{
         position: absolute;  
-        top:90%;
-        left:25%;
+        top:85%;
+        left:50%;
         transform: translate(-50%, -50%);
-        width: 30%;  
+        width: 80%;  
     }
+
+    .popup-img .label-details{
+        font-size: 3vw;
+    }
+
+    .popup-img .label-description{
+        font-size: 2.5vw;
+    }
+    
     
     /* IV | FOOTER */
 

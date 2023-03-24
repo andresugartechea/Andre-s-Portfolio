@@ -23,6 +23,7 @@ document.querySelectorAll(".gallery .container").forEach(container =>{
         document.querySelector(".popup-img img").src = container.querySelector("img").getAttribute("src");
         document.querySelector(".popup-img .title").innerHTML = container.querySelector("img").getAttribute("alt");
         document.querySelector(".popup-img .label-details").innerHTML = container.querySelector(".details p").innerHTML;
+        document.querySelector(".popup-img .label-description").innerHTML = container.querySelector(".description p").innerHTML;
     }
 })
 
