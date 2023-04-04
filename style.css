@@ -142,12 +142,27 @@ body {
     position: fixed;
     top:0;
     left: 0;
-    background: rgba(0, 0, 0, 0.9);
-    height: 100%;
-    width: 100%;
     z-index: 4;
 
+    background: rgba(0, 0, 0, 0.9);
+
+    height: 100%;
+    width: 100%;
+
     display:none;
+}
+
+
+.popup-img-content{
+    width: 100%;
+    display: flex;
+
+
+    justify-content: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .popup-img span{
@@ -162,21 +177,15 @@ body {
 }
 
 .popup-img img{
-    position: absolute;
-    top:50%;
-    left:35%;
-    transform: translate(-50%, -50%);
-    width: 36vw;
-    object-fit: cover;
+    /* width: 38%; CHANGED IN JS*/ 
+    object-fit: contain;
 }
 
 
 .popup-img .label{
-    position: absolute;  
-    top:50%;
-    left:72vw;
-    transform: translate(-50%, -50%);
     width: 30%;  
+    margin: 30px;
+    align-self: center;
 }
 
 .popup-img .title{

@@ -15,11 +15,16 @@ let a;
 document.querySelectorAll(".gallery .container").forEach(container =>{
     container.onclick = () => {
         document.querySelector(".popup-img").style.display = "block";
-        // document.querySelector(".gallery").style.display = "none";
-        // document.querySelector(".nav").style.display = "none";
-        // document.querySelector(".footer").style.display = "none";
-        // a = container.querySelector(".details p").innerHTML;
-        // console.log(a);
+        a = container.querySelector("img");
+
+        if (a.getAttribute("width") > "100px"){ //horizontal
+            document.querySelector(".popup-img-content img").style.width = "50%";
+        }
+        else if (a.getAttribute("width") == "100px"){ //vertical
+            document.querySelector(".popup-img-content img").style.width = "37%";
+        }
+
+        // console.log(a.getAttribute("width"));
         document.querySelector(".popup-img img").src = container.querySelector("img").getAttribute("src");
         document.querySelector(".popup-img .title").innerHTML = container.querySelector("img").getAttribute("alt");
         document.querySelector(".popup-img .label-details").innerHTML = container.querySelector(".details p").innerHTML;
