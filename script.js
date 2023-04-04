@@ -15,8 +15,8 @@ let a;
 document.querySelectorAll(".gallery .container").forEach(container =>{
     container.onclick = () => {
         document.querySelector(".popup-img").style.display = "block";
-        document.querySelector(".gallery").style.display = "none";
-        document.querySelector(".nav").style.display = "none";
+        // document.querySelector(".gallery").style.display = "none";
+        // document.querySelector(".nav").style.display = "none";
         // document.querySelector(".footer").style.display = "none";
         // a = container.querySelector(".details p").innerHTML;
         // console.log(a);
