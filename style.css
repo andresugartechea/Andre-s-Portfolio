@@ -305,18 +305,23 @@ body {
 
     /* III | POP-UP */
 
-    .popup-img img{
+    /* .popup-img img{
         top:40%;
         left:50%;
         transform: translate(-50%, -50%);
         width: 40vh;
-    }
+    } */
 
+    .popup-img-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .popup-img .label{
-        position: absolute;  
+        /* position: absolute;  
         top:85%;
         left:50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
         width: 80%;  
     }
 

@@ -17,11 +17,21 @@ document.querySelectorAll(".gallery .container").forEach(container =>{
         document.querySelector(".popup-img").style.display = "block";
         a = container.querySelector("img");
 
-        if (a.getAttribute("width") > "100px"){ //horizontal
-            document.querySelector(".popup-img-content img").style.width = "50%";
+        if (screen.width > 820){
+            if (a.getAttribute("width") > "100px"){ //horizontal
+                document.querySelector(".popup-img-content img").style.width = "50%";
+            }
+            else if (a.getAttribute("width") == "100px"){ //vertical
+                document.querySelector(".popup-img-content img").style.width = "37%";
+            }
         }
-        else if (a.getAttribute("width") == "100px"){ //vertical
-            document.querySelector(".popup-img-content img").style.width = "37%";
+        else {
+            if (a.getAttribute("width") > "100px"){ //horizontal
+                document.querySelector(".popup-img-content img").style.width = "82%";
+            }
+            else if (a.getAttribute("width") == "100px"){ //vertical
+                document.querySelector(".popup-img-content img").style.width = "60%";
+            }
         }
 
         // console.log(a.getAttribute("width"));
